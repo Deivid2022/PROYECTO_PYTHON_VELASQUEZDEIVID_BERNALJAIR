@@ -33,15 +33,27 @@
         {"id": 15, "total": 370.85, "fecha": "2019-03-11", "id_cliente": 1, "id_comercial": 5},
         {"id": 16, "total": 2389.23, "fecha": "2019-03-11", "id_cliente": 1, "id_comercial": 5}
       ],
-         "rutas":{
-        "Ruta NodeJS": [""],
-        "Ruta Java": [""],
-        "Ruta NetCore": [""],
-        "Fundamentos de programación": ["Introducción a la algoritmia", "PSeInt", "Python"],
-        "Programación Web": ["HTML", "CSS", "Bootstrap"],
-        "Programación formal": ["Java", "JavaScript", "C#"],
-        "Bases de datos": ["Mysql", "MongoDb", "Postgresql"],
-        "Backend": ["NetCore", "Spring Boot", "NodeJS", "Express"]
-    }    
-    }
+         "rutas" : {
+        "NodeJS": {
+            "Fundamentos de programación": ["Introducción a la algoritmia", "PSeInt", "Python"],
+            "Programación Web": ["HTML", "CSS", "Bootstrap"],
+            "Programación formal": ["Java", "JavaScript", "C#"],
+            "Bases de datos": ["MongoDb", "Postgresql"],
+            "Backend": ["NodeJS", "Express"]
+        },
+        "Java": {
+            "Fundamentos de programación": ["Introducción a la algoritmia", "PSeInt", "Python"],
+            "Programación Web": ["HTML", "CSS", "Bootstrap"],
+            "Programación formal": ["Java", "JavaScript", "C#"],
+            "Bases de datos": ["Mysql", "MongoDb"],
+            "Backend": ["Spring Boot"]
+        },
+        "NetCore": {
+            "Fundamentos de programación": ["Introducción a la algoritmia", "PSeInt", "Python"],
+            "Programación Web": ["HTML", "CSS", "Bootstrap"],
+            "Programación formal": ["Java", "JavaScript", "C#"],
+            "Bases de datos": ["Mysql", "Postgresql"],
+            "Backend": ["NetCore"]
+        }
+     }   
   }

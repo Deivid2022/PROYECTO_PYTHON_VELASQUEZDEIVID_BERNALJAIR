@@ -6,7 +6,7 @@ def inscripciones():
         data = json.load(archivo)
     ultimo_id = max([inscripcion['id'] for inscripcion in data['datos']['Inscripcion']]) if data['datos']['Inscripcion'] else 0
 
-
+    estado = 'Inscrito'
     nuevo_id = ultimo_id + 1
     nueva_inscripcion = {}
     nueva_inscripcion['id'] = nuevo_id 
@@ -18,10 +18,12 @@ def inscripciones():
     nueva_inscripcion['acudiente'] = input('Ingrese el nombre del acudiente del camper(opcional): ')
     nueva_inscripcion['celular'] = int(input('Ingresa el número de celular: '))
     nueva_inscripcion['telefono'] = int(input('Ingrese el número fijo: '))
+    nueva_inscripcion['estado'] = estado
+    
     
     data['datos']['Inscripcion'].append(nueva_inscripcion)
     with open('data.json','w') as archivo:
         json.dump(data,archivo,indent=4)
         
-
+inscripciones()
 

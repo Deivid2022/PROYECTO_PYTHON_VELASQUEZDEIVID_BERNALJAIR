@@ -2,7 +2,7 @@ def inscripciones():
     
     import json
     
-    with open('data.json','r') as archivo:
+    with open('Inscritos.json','r') as archivo:
         data = json.load(archivo)
     ultimo_id = max([inscripcion['id'] for inscripcion in data['datos']['Inscripcion']]) if data['datos']['Inscripcion'] else 0
 
@@ -22,7 +22,7 @@ def inscripciones():
     
     
     data['datos']['Inscripcion'].append(nueva_inscripcion)
-    with open('data.json','w') as archivo:
+    with open('Inscritos.json','w') as archivo:
         json.dump(data,archivo,indent=4)
         
 inscripciones()

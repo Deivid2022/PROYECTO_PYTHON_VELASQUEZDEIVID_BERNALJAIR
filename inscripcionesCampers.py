@@ -24,7 +24,7 @@ def inscripciones():
     
     import json
     
-    with open('Inscritos.json','r') as archivo:
+    with open('InscritosCampers.json','r') as archivo:
         data = json.load(archivo)
     ultimo_id = max([inscripcion['id'] for inscripcion in data['datos']['Inscripcion']]) if data['datos']['Inscripcion'] else 0
 
@@ -46,7 +46,7 @@ def inscripciones():
         print('La edad debe estar entre 16 y 28 años.')
         edad = input('Ingrese la edad del camper: ')
     nueva_inscripcion['edad'] = int(edad)
-    if nueva_inscripcion['edad'] == 17:
+    if nueva_inscripcion['edad'] <= 17:
         nueva_inscripcion['acudiente'] = input('Ingrese el nombre del acudiente del camper: ')
         celular_acudiente = input('Ingrese el número de celular del acudiente: ')
         while not validarIden(celular_acudiente):
@@ -71,7 +71,9 @@ def inscripciones():
     
     
     data['datos']['Inscripcion'].append(nueva_inscripcion)
-    with open('Inscritos.json','w') as archivo:
+    with open('InscritosCampers.json','w') as archivo:
         json.dump(data,archivo,indent=4)
       
 inscripciones()
+
+

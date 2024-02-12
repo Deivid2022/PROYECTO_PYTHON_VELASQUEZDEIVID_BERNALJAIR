@@ -26,10 +26,7 @@ def Coordinadores():
     
     with open('coordinadores.json','r') as archivo:
         data = json.load(archivo)
-    ultimo_id = max([trainer['id'] for trainer in data['coordinadores']]) if data['coordinadores']else 0
-    nuevo_id = ultimo_id + 1
     nueva_inscripcion = {}
-    nueva_inscripcion['id'] = nuevo_id 
     identidad = input('Ingresa el número de identidad del coordinador: ')
     while not validarIden(identidad):
         print('El número de identidad debe ser un entero positivo.')

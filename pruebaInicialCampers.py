@@ -13,7 +13,7 @@ def pruebaInicial():
     # Continuar el bucle mientras haya inscritos por procesar
     while inscritos:
         
-        id_camper = int(input('Ingresa el ID del camper: '))
+        id_camper = int(input('Ingresa el numero de identidad del camper: '))
         
      
         if id_camper in ids_utilizados:
@@ -27,7 +27,7 @@ def pruebaInicial():
         estadoR = 'Reprobado'
         
         for inscrito in inscritos:
-            if inscrito['id'] == id_camper:
+            if inscrito['identidad'] == id_camper:
                 notaPractica = int(input('Ingrese la nota de la prueba practica: '))
                 notaTeorica = int(input('Ingrese la nota de la prueba teorica: '))
                 notafinal = (notaPractica + notaTeorica)/2
@@ -48,7 +48,7 @@ def pruebaInicial():
         
         
         # Eliminar el inscrito actual de la lista
-        inscritos = [inscrito for inscrito in inscritos if inscrito['id'] != id_camper]
+        inscritos = [inscrito for inscrito in inscritos if inscrito['identidad'] != id_camper]
         
         with open('aprobadosYreprobados.json', 'w') as archivo:
             json.dump(datos2, archivo, indent=4)  

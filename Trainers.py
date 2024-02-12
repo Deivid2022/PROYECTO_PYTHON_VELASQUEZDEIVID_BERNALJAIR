@@ -18,11 +18,7 @@ def Añadir_trainer():
     with open('Trainers.json', 'r') as archivo:
         data = json.load(archivo)
     
-    ultimo_id = max([trainer['id'] for trainer in data['Trainers']]) if data['Trainers']else 0
-    
-    nuevo_id = ultimo_id + 1 
     nuevos_trainers = {}
-    nuevos_trainers['id'] = nuevo_id
     identidad = input('Ingresa el número de identidad del Trainer: ')
     while not validarIden(identidad):
         print('El número de identidad debe ser un entero positivo.')
@@ -54,4 +50,5 @@ def Añadir_trainer():
 
 
 Añadir_trainer()
+
     

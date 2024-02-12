@@ -53,5 +53,5 @@ def Añadir_trainer():
 
 
 
-#Añadir_trainer()
+Añadir_trainer()
     

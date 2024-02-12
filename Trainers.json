@@ -1,5 +1,13 @@
 {
-    "Trainers":[
-    
+    "Trainers": [
+        {
+            "identidad": 2181515,
+            "nombre": "de",
+            "apellido1": "de",
+            "apellido2": "de",
+            "direccion": "de",
+            "edad": 20,
+            "celular": 651
+        }
     ]
 }

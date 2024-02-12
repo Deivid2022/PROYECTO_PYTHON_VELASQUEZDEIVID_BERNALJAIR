@@ -26,12 +26,10 @@ def inscripciones():
     
     with open('InscritosCampers.json','r') as archivo:
         data = json.load(archivo)
-    ultimo_id = max([inscripcion['id'] for inscripcion in data['datos']['Inscripcion']]) if data['datos']['Inscripcion'] else 0
+    
 
     estado = 'Inscrito'
-    nuevo_id = ultimo_id + 1
     nueva_inscripcion = {}
-    nueva_inscripcion['id'] = nuevo_id 
     identidad = input('Ingresa el número de identidad del camper: ')
     while not validarIden(identidad):
         print('El número de identidad debe ser un entero positivo.')
@@ -75,5 +73,4 @@ def inscripciones():
         json.dump(data,archivo,indent=4)
       
 inscripciones()
-
 

@@ -1,11 +1,36 @@
 {
     "inscritos": {
         "aprobados": [
-           
+            {
+                "identidad": 1021225,
+                "nombre": "d",
+                "apellido1": "d",
+                "apellido2": "d",
+                "estado": "Aprobado"
+            },
+            {
+                "identidad": 10001,
+                "nombre": "r",
+                "apellido1": "r",
+                "apellido2": "r",
+                "estado": "Aprobado"
+            },
+            {
+                "identidad": 10002,
+                "nombre": "t",
+                "apellido1": "t",
+                "apellido2": "t",
+                "estado": "Aprobado"
+            }
         ],
-        "reprobados":[
-
+        "reprobados": [
+            {
+                "identidad": 10000,
+                "nombre": "e",
+                "apellido1": "e",
+                "apellido2": "e",
+                "estado": "Reprobado"
+            }
         ]
-    
     }
 }

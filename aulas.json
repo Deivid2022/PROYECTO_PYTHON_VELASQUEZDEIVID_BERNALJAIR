@@ -1,21 +1,54 @@
 {
     "aulas": {
         "Aula1": {
-            "P1": [
-                {
-                    "identidad": 1021225,
-                    "nombre": "d",
-                    "apellido1": "d",
-                    "apellido2": "d",
-                    "estado": "Cursando"
-                }
-            ],
+            "P1": [],
             "P2": [],
             "P3": [],
             "P4": []
         },
         "Aula2": {
-            "M1": [],
+            "M1": [
+                {
+                    "identidad": 1021225,
+                    "nombre": "d",
+                    "apellido1": "d",
+                    "apellido2": "d",
+                    "estado": "Cursando",
+                    "ruta": "Java"
+                },
+                {
+                    "identidad": 10001,
+                    "nombre": "r",
+                    "apellido1": "r",
+                    "apellido2": "r",
+                    "estado": "Cursando",
+                    "ruta": "Java"
+                },
+                {
+                    "identidad": 10002,
+                    "nombre": "t",
+                    "apellido1": "t",
+                    "apellido2": "t",
+                    "estado": "Cursando",
+                    "ruta": "Java"
+                },
+                {
+                    "identidad": 10003,
+                    "nombre": "y",
+                    "apellido1": "y",
+                    "apellido2": "y",
+                    "estado": "Cursando",
+                    "ruta": "Java"
+                },
+                {
+                    "identidad": 10004,
+                    "nombre": "s",
+                    "apellido1": "s",
+                    "apellido2": "s",
+                    "estado": "Cursando",
+                    "ruta": "Java"
+                }
+            ],
             "M2": [],
             "M3": [],
             "M4": []

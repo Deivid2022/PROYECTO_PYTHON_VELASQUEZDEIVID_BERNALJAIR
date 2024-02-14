@@ -62,7 +62,7 @@ def seleccionar_materia():
 def obtener_nota(tipo, materia):
     while True:
         try:
-            nota = int(input(f'Digite nota de la {tipo} (0 a 100) de {materia}: '))
+            nota = int(input(f'Digite nota de la {tipo} de 0 a 100 de {materia}: '))
             if 0 <= nota <= 100:
                 return nota * 0.3 if tipo == 'prueba teórica' else nota * 0.6
             else:
@@ -74,7 +74,7 @@ def obtener_promedio(tipo, materia):
     while True:
         try:
             cantidad = int(input(f'Digite la cantidad de {tipo} realizados en {materia}: '))
-            notas = [int(input(f'Digite nota del {tipo} #{i + 1} (0 a 100): ')) for i in range(cantidad)]
+            notas = [int(input(f'Digite nota del {tipo} #{i + 1} de 0 a 100: ')) for i in range(cantidad)]
             promedio = sum(notas) / cantidad
             if all(0 <= nota <= 100 for nota in notas):
                 return promedio

@@ -21,10 +21,8 @@ def menuCoordinador():
     print('5. Evaluar el rendimiento de los campers')
     
 def menuTrainer():
-    print('Que deseas hacer?')
-    print('1. Ingresar notas de camper')
-    print('2. observar riesgo del camper por modulo')
-    print('3. Observar salones asignados')    
+    print('Observar salo asignado')
+     
 
 def menuCamper():
     print('Para observar tu rendimiento ingresa tu numero de identidad')

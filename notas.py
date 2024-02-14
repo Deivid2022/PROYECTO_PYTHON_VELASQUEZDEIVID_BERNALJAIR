@@ -1,18 +1,20 @@
 import json
 
 def cargar_inscritos():
-    with open('inscritosCampers.json', 'r', encoding='utf8') as file:
+    with open('cursando.json', 'r', encoding='utf8') as file:
         data = json.load(file)
-    return data['datos']['Inscripcion']
+    return data
 
 def actualizar_notas_y_rendimiento(identidad):
     with open('notas.json', 'r', encoding='utf8') as file:
         notas = json.load(file)
 
     campers = notas['Notas']['Cursando']
-
+    
+    
     for camper in campers:
         if camper['identidad'] == identidad:
+            
             while True:
                 materia = seleccionar_materia()
                 if materia is None:

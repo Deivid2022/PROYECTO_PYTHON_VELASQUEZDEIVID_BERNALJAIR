@@ -14,14 +14,18 @@ def rutas():
     
     if aula in data_aulas['aulas'] and grupo in data_aulas['aulas'][aula]:
         
-        ruta = input('Ingresa la ruta de este grupo: ')
+        ruta = input('Ingresa la ruta de este grupo: ').capitalize()
         Trainer = int(input('Ingrese el numero de identidad del Trainer: '))
-        
+        fechaInicio = input('Ingresa la fecha de inicio: ')
+        fechaFinal = input('Ingresa la fecha de finalización')
         for estudiante in data_aulas['aulas'][aula][grupo]:
             for trainer in trainers:
                 if trainer['identidad'] == Trainer:
                     estudiante['ruta'] = ruta
                     estudiante['trainer'] = trainer['nombre']
+                    estudiante['Grupo'] = grupo
+                    estudiante['Fecha de Inicio'] = fechaInicio
+                    estudiante['Fecha de Finalizacion'] = fechaFinal
         with open('aulas.json','w') as archivo:
             json.dump(data_aulas, archivo, indent=4)
 

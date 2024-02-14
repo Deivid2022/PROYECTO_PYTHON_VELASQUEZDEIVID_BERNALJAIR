@@ -42,6 +42,13 @@
                 "apellido1": "u",
                 "apellido2": "u",
                 "estado": "Aprobado"
+            },
+            {
+                "identidad": 10007,
+                "nombre": "g",
+                "apellido1": "g",
+                "apellido2": "g",
+                "estado": "Aprobado"
             }
         ],
         "reprobados": [

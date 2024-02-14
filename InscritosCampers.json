@@ -106,19 +106,6 @@
                 "estado": "Inscrito"
             },
             {
-                "identidad": 10007,
-                "nombre": "g",
-                "apellido1": "g",
-                "apellido2": "g",
-                "direccion": "g",
-                "edad": 21,
-                "acudiente": null,
-                "celular_acudiente": null,
-                "celular": 5115,
-                "telefono": 4154,
-                "estado": "Inscrito"
-            },
-            {
                 "identidad": 10008,
                 "nombre": "h",
                 "apellido1": "h",

@@ -106,11 +106,11 @@ def menu_coordinadores():
             print("Accediste a Distribución de Aulas.")
             from distribucionAulas import distribucionAulas1
         elif user_input == "6":
-            menu_rutas()
+            menu_reportes()
         elif user_input == "7":
             menu_notas()
         elif user_input == "8":
-            menu_reportes()
+            menu_rutas()
         elif user_input == "9":
             print("Volviendo al menú principal.")
             break

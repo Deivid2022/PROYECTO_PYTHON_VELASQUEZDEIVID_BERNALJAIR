@@ -1,4 +1,4 @@
-def rutas():
+def rutas1():
     import json
 
     with open('aulas.json','r') as archivo:
@@ -39,4 +39,4 @@ def rutas():
     else:
         print('El aula o el grupo ingresado no es válido.')
 
-rutas()
+rutas1()

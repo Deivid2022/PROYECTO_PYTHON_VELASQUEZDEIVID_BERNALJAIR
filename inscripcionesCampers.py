@@ -139,7 +139,6 @@ def mostrar_datos(ruta):
     print(f"Celular acudiente: {camper['celular_acudiente']}")
     print(f"Celular: {camper['celular']}")
     print(f"Teléfono: {camper['telefono']}")
-    print(f"Estado: {camper['estado']}")
     print()
     
 inscripciones()

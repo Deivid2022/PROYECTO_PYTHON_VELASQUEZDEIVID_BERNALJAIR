@@ -1,4 +1,4 @@
-def distribucionAulas():
+def distribucionAulas1():
     import json
     with open('aprobadosYreprobados.json', 'r') as archivo:
         data_aprobados = json.load(archivo)
@@ -60,4 +60,4 @@ def distribucionAulas():
     else:
         print('El aula o el horario ingresado no es válido.')
 
-distribucionAulas()
+distribucionAulas1()

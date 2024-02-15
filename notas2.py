@@ -32,7 +32,7 @@ def notas():
                 Total = (NotaT*0.3)+(NotaP*0.6)+(NotaQ*0.1)
                 if Total >= 60:
                     cursado['Fundamentos de programacion'] = 'Aprobado'
-                    cursado['riesgo'] = 'Bajo'
+                    cursado['riesgo'] = ''
                 elif Total < 60:
                     cursado['Fundamentos de programacion'] = 'Reprobado'
                     cursado['riesgo'] = 'Alto'
@@ -43,10 +43,11 @@ def notas():
                 Total = (NotaT*0.3)+(NotaP*0.6)+(NotaQ*0.1)
                 if Total >= 60:
                     cursado['Programacion Web'] = 'Aprobado'
-                    cursado['riesgo'] = 'Bajo'
+                    cursado['riesgo'] = ''
                 elif Total < 60:
                     cursado['Programacion Web'] = 'Reprobado'
-                    cursado['riesgo'] = 'Alto'
+                    cursado['estado'] = 'Expulsado'
+                    cursado['riesgo'] = 'Expulsado'
             elif num == '3':
                 NotaT = int(input('Ingresa la nota teorica: '))
                 NotaP = int(input('Ingresa la nota practica: '))
@@ -54,10 +55,11 @@ def notas():
                 Total = (NotaT*0.3)+(NotaP*0.6)+(NotaQ*0.1)
                 if Total >= 60:
                     cursado['Programacion formal'] = 'Aprobado'
-                    cursado['riesgo'] = 'Bajo'
+                    cursado['riesgo'] = ''
                 elif Total < 60:
                     cursado['Programacion formal'] = 'Reprobado'
-                    cursado['riesgo'] = 'Alto'
+                    cursado['estado'] = 'Expulsado'
+                    cursado['riesgo'] = 'Expulsado'
             elif num == '4':
                 NotaT = int(input('Ingresa la nota teorica: '))
                 NotaP = int(input('Ingresa la nota practica: '))
@@ -65,21 +67,23 @@ def notas():
                 Total = (NotaT*0.3)+(NotaP*0.6)+(NotaQ*0.1)
                 if Total >= 60:
                     cursado['Bases de datos'] = 'Aprobado'
-                    cursado['riesgo'] = 'Bajo'
+                    cursado['riesgo'] = ''
                 elif Total < 60:
                     cursado['Bases de datos'] = 'Reprobados'
-                    cursado['riesgo'] = 'Alto'
+                    cursado['estado'] = 'Expulsado'
+                    cursado['riesgo'] = 'Expulsado'
             elif num == '5':
                 NotaT = int(input('Ingresa la nota teorica: '))
                 NotaP = int(input('Ingresa la nota practica: '))
                 NotaQ = int(input('Ingrsa el promedio de notas de los quizes y trabajos: '))
                 Total = (NotaT*0.3)+(NotaP*0.6)+(NotaQ*0.1)
                 if Total >= 60:
-                    cursado['Backend'] = 'Aprobado'
-                    cursado['riesgo'] = 'Bajo'
+                    cursado['Backend'] = 'Graduado'
+                    cursado['riesgo'] = ''
                 elif Total < 60:
                     cursado['Backend'] = 'Reprobado'
-                    cursado['riesgo'] = 'Alto'
+                    cursado['estado'] = 'Expulsado'
+                    cursado['riesgo'] = 'Expulsado'
     
     
     with open('aulas.json','w') as archivo:

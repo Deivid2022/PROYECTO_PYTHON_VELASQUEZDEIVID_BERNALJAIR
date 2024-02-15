@@ -88,7 +88,7 @@ def Eliminar_trainer():
     
 #print(leer_trainer())
 #Actualizar_trainer()
-Añadir_trainer()
+#Añadir_trainer()
 #Eliminar_trainer()
 
     

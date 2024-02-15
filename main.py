@@ -1,3 +1,5 @@
+import os
+from Trainers import leer_trainer, Añadir_trainer, Actualizar_trainer, Eliminar_trainer
 
 def clear_console():
     import os
@@ -55,7 +57,6 @@ def eliminar_trainers():
     print("Accediste a Eliminar Trainers.")
 
 def menu_trainers():
-    
     clear_console()
     while True:
         print("1. Leer Trainers")
@@ -66,13 +67,13 @@ def menu_trainers():
 
         user_input = get_valid_input(["1", "2", "3", "4", "5"])
         if user_input == "1":
-            from Trainers import leer_trainer
+            leer_trainer()
         elif user_input == "2":
-            from Trainers import Añadir_trainer
+            Añadir_trainer()
         elif user_input == "3":
-            from Trainers import Actualizar_trainer
+            Actualizar_trainer()
         elif user_input == "4":
-            from Trainers import Eliminar_trainer
+            Eliminar_trainer()
         elif user_input == "5":
             print("Volviendo al menú principal.")
             break

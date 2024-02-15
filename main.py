@@ -94,7 +94,8 @@ def menu_coordinadores():
         print("3. Distribución de Aulas")
         print("4. Módulo de Reportes")
         print("5. Notas")
-        print("6. Volver al menú principal")
+        print("6. Rutas")
+        print("7. Volver al menú principal")
 
         user_input = get_valid_input(["1", "2", "3", "4", "5", "6"])
         if user_input == "1":
@@ -111,6 +112,8 @@ def menu_coordinadores():
         elif user_input == "5":
             menu_notas()
         elif user_input == "6":
+            menu_rutas()
+        elif user_input == "7":
             print("Volviendo al menú principal.")
             break
 
@@ -157,6 +160,23 @@ def menu_notas():
 
 def actualizar_nota_y_rendimiento():
     print("Accediste a Actualizar Nota y Rendimiento.")
+
+def menu_rutas():
+    clear_console()
+    while True:
+        print("Menu de Rutas:")
+        print("1. Configurar Ruta")
+        print("2. Volver al menú de Coordinadores")
+
+        user_input = get_valid_input(["1", "2"])
+        if user_input == "1":
+            rutas.rutas()
+        elif user_input == "2":
+            print("Volviendo al menú de Coordinadores.")
+            break
+
+def configurar_ruta():
+    print("Accediste a Configurar Ruta.")
 
 
 def menu_principal():

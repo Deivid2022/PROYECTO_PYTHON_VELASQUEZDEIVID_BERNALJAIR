@@ -43,12 +43,11 @@ def pruebaInicial():
             # Agregar estudiante a la lista correspondiente
             if nuevo_estudiante['estado'] == 'Aprobado':
                 datos_aprobados_reprobados['inscritos']['aprobados'].append(nuevo_estudiante)
+                inscrito['estado'] = 'Cursando'
             else:
                 datos_aprobados_reprobados['inscritos']['reprobados'].append(nuevo_estudiante)
             
-            # Eliminar al estudiante del archivo "InscritosCampers.json"
-            inscritos.remove(inscrito)
-            break
+            
 
     # Actualizar los archivos JSON
     with open('InscritosCampers.json', 'w') as archivo:

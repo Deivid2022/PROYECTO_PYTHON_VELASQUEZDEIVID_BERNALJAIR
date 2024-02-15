@@ -142,7 +142,7 @@ def mostrar_datos(ruta):
     print(f"Estado: {camper['estado']}")
     print()
     
-#inscripciones()
+inscripciones()
 #actualizar_campers()
 #buscar()
 #mostrar_datos()

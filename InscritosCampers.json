@@ -117,6 +117,19 @@
                 "celular": 1516,
                 "telefono": 5156,
                 "estado": "Inscrito"
+            },
+            {
+                "identidad": 10009,
+                "nombre": "q",
+                "apellido1": "q",
+                "apellido2": "q",
+                "direccion": "q",
+                "edad": 21,
+                "acudiente": null,
+                "celular_acudiente": null,
+                "celular": 561,
+                "telefono": 35,
+                "estado": "Cursando"
             }
         ]
     }

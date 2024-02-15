@@ -26,12 +26,12 @@ def Añadir_trainer():
     identidad = input('Ingresa el número de identidad del Trainer: ')
     while not validarIden(identidad):
         print('El número de identidad debe ser un entero positivo.')
-        identidad = input('Ingresa el número de identidad del camper: ')
+        identidad = input('Ingresa el número de identidad del Trainer: ')
     nuevos_trainers['identidad'] = int(identidad)
-    nuevos_trainers['nombre'] = input('Ingresa el nombre del camper: ')
-    nuevos_trainers['apellido1'] = input('Ingrese el primer apellido del camper: ')
-    nuevos_trainers['apellido2'] = input('Ingrese el segundo apellido del camper: ')
-    nuevos_trainers['direccion'] = input('Ingrese la direccion del camper: ')
+    nuevos_trainers['nombre'] = input('Ingresa el nombre del Trainer: ')
+    nuevos_trainers['apellido1'] = input('Ingrese el primer apellido del Trainer: ')
+    nuevos_trainers['apellido2'] = input('Ingrese el segundo apellido del Trainer: ')
+    nuevos_trainers['direccion'] = input('Ingrese la direccion del Trainer: ')
     edad = input('Ingresa la edad del Trainer: ')
     while not validarIden(edad):
         print('El número de la edad debe ser un entero positivo.')
@@ -88,7 +88,7 @@ def Eliminar_trainer():
     
 #print(leer_trainer())
 #Actualizar_trainer()
-#Añadir_trainer()
+Añadir_trainer()
 #Eliminar_trainer()
 
     

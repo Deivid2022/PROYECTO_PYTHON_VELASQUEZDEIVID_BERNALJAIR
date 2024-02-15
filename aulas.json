@@ -81,7 +81,62 @@
         },
         "Aula2": {
             "M1": [],
-            "M2": [],
+            "M2": [
+                {
+                    "identidad": 10002,
+                    "nombre": "t",
+                    "apellido1": "t",
+                    "apellido2": "t",
+                    "estado": "Cursando",
+                    "ruta": "Java",
+                    "trainer": "ej",
+                    "Grupo": "M2",
+                    "Fecha de Inicio": "de",
+                    "Fecha de Finalizacion": "de",
+                    "Fundamentos de programacion": "Reprobado",
+                    "Programacion Web": "",
+                    "Programacion formal": "",
+                    "Bases de datos": "",
+                    "Backend": "",
+                    "riesgo": "Alto"
+                },
+                {
+                    "identidad": 10003,
+                    "nombre": "y",
+                    "apellido1": "y",
+                    "apellido2": "y",
+                    "estado": "Cursando",
+                    "ruta": "Java",
+                    "trainer": "ej",
+                    "Grupo": "M2",
+                    "Fecha de Inicio": "de",
+                    "Fecha de Finalizacion": "de",
+                    "Fundamentos de programacion": "Reprobado",
+                    "Programacion Web": "",
+                    "Programacion formal": "",
+                    "Bases de datos": "",
+                    "Backend": "",
+                    "riesgo": "Alto"
+                },
+                {
+                    "identidad": 10004,
+                    "nombre": "s",
+                    "apellido1": "s",
+                    "apellido2": "s",
+                    "estado": "Cursando",
+                    "ruta": "Java",
+                    "trainer": "ej",
+                    "Grupo": "M2",
+                    "Fecha de Inicio": "de",
+                    "Fecha de Finalizacion": "de",
+                    "Fundamentos de programacion": "Reprobado",
+                    "Programacion Web": "",
+                    "Programacion formal": "",
+                    "Bases de datos": "",
+                    "Backend": "",
+                    "riesgo": "Alto"
+                }
+            ],
             "M3": [],
             "M4": []
         },
@@ -89,7 +144,26 @@
             "J1": [],
             "J2": [],
             "J3": [],
-            "J4": []
+            "J4": [
+                {
+                    "identidad": 10009,
+                    "nombre": "q",
+                    "apellido1": "q",
+                    "apellido2": "q",
+                    "estado": "Cursando",
+                    "ruta": "Net",
+                    "trainer": "ej",
+                    "Grupo": "J4",
+                    "Fecha de Inicio": "de",
+                    "Fecha de Finalizacion": "de",
+                    "Fundamentos de programacion": "Aprobado",
+                    "Programacion Web": "",
+                    "Programacion formal": "",
+                    "Bases de datos": "",
+                    "Backend": "",
+                    "riesgo": "Bajo"
+                }
+            ]
         }
     }
 }

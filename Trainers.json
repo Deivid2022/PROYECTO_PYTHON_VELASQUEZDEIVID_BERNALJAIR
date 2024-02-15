@@ -8,6 +8,15 @@
             "direccion": "de",
             "edad": 20,
             "celular": 651
+        },
+        {
+            "identidad": 151515,
+            "nombre": "ej",
+            "apellido1": "ej",
+            "apellido2": "ej",
+            "direccion": "ej",
+            "edad": 25,
+            "celular": 133515
         }
     ]
 }

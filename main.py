@@ -22,7 +22,7 @@ def menu_inscripcionesCampers():
         user_input = get_valid_input(["1", "2", "3", "4", "5"])
         if user_input == "1":
             print("Accediste a Inscripciones de Campers.")
-            # Aquí llamarías a la función correspondiente del módulo inscripcionesCampers
+
         elif user_input == "2":
             print("Accediste a Actualizar Campers.")
         elif user_input == "3":
